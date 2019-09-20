@@ -2,6 +2,8 @@
 <ActionBar [title]="title"></ActionBar>
 <ScrollView>
     <StackLayout class="p-20">
+        <Button text="Couchbase" [nsRouterLink]="['/couchbase-demo']" pageTransition="slide"
+                clearHistory="false"></Button>
         <Label text="{{ docs.rows | json }}" textWrap="true"></Label>
     </StackLayout>
 </ScrollView>
